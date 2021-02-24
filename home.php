@@ -40,7 +40,7 @@
     </div>
     
     <footer class="d-flex fixed-bottom justify-content-center mt-auto">
-        <a href="https://github.com/matheus55391/Cifra-de-Cesar" style="color: #0d6efd;">@Meguinha2021</a>    
+        <a href="https://github.com/matheus55391/Cifra-de-Cesar" style="color: #0d6efd;">@Megu2021</a>    
     </footer>
     
 
