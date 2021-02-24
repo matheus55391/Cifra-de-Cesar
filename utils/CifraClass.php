@@ -31,7 +31,14 @@
             $old_arrey = str_split($this->text);          
             $newText = "";
             foreach ($old_arrey as $i){
-                $i = strtolower($i); // deixa low case
+				
+				if (ctype_alpha($i) > 1 ){
+					$i = strtolower($i);// deixa low case
+				}			
+				
+					
+                
+				
                 if(in_array($i, $this->alph_low)){
                     //verifica se é uma letra do alfabeto   
                     
@@ -46,20 +53,13 @@
                     while ($num < 0){
                         $num = $num + 26;
 
-                    }
-                  
-                    
-                    $i = $this->alph_low[$num];   
-
-
+                    }   
+                    $i = $this->alph_low[$num];  
                 }
                 
                 $newText = $newText."".$i;
-            }
-            echo $newText;
+            }            
             return  $newText; 
-
-
 
         }
 
@@ -68,7 +68,9 @@
             $old_arrey = str_split($this->text);          
             $newText = "";
             foreach ($old_arrey as $i){
-                $i = strtolower($i); // deixa low case
+                if (ctype_alpha($i) > 1 ){
+					$i = strtolower($i);// deixa low case
+				}	
                 if(in_array($i, $this->alph_low)){
                     //verifica se é uma letra do alfabeto   
                     
