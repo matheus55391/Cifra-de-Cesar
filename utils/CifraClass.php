@@ -46,7 +46,7 @@
                     
                           //letra       //soma
                     $num = $arrey_key + $this->key;
-
+                    
                     while ($num > (count($this->alph_low) - 1)){
                         $num = $num - count($this->alph_low);
                     }
