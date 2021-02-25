@@ -32,12 +32,9 @@
             $newText = "";
             foreach ($old_arrey as $i){
 				
-				if (ctype_alpha($i) > 1 ){
+				if (ctype_alpha($i)){
 					$i = strtolower($i);// deixa low case
-				}			
-				
-					
-                
+				}			                
 				
                 if(in_array($i, $this->alph_low)){
                     //verifica se é uma letra do alfabeto   
@@ -68,7 +65,7 @@
             $old_arrey = str_split($this->text);          
             $newText = "";
             foreach ($old_arrey as $i){
-                if (ctype_alpha($i) > 1 ){
+                if (ctype_alpha($i)){
 					$i = strtolower($i);// deixa low case
 				}	
                 if(in_array($i, $this->alph_low)){
