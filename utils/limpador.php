@@ -7,8 +7,8 @@ function limpartexto($str) {
     $str = preg_replace('/[úùûü]/ui', 'u', $str);
     $str = preg_replace('/[ç]/ui', 'c', $str);
     // $str = preg_replace('/[,(),;:|!"#$%&/=?~^><ªº-]/', '_', $str);
-    $str = preg_replace('/[^a-z0-9]/i', '_', $str);
-    $str = preg_replace('/_+/', '_', $str); // ideia do Bacco :)
+    //$str = preg_replace('/[^a-z0-9]/i', '_', $str);
+    //$str = preg_replace('/_+/', '_', $str); // ideia do Bacco :)
     return $str;
 }
 ?>
