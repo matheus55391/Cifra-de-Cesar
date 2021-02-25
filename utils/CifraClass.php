@@ -1,6 +1,6 @@
 <?php
 
-
+    require_once 'limpador.php';
 
     class Cifra{
 
@@ -11,7 +11,7 @@
         public function __construct(int $key, string $text)
         {
             $this->key = $key;
-            $this->text = $text;
+            $this->text = limpartexto($text);
                 
         }
 
@@ -20,9 +20,6 @@
         }
         public function get_text(){
             return $this->text;
-        }
-        public function ping(){
-            return "pong";
         }
 
         public function criptografar(){
@@ -51,6 +48,7 @@
                         $num = $num + 26;
 
                     }   
+                    
                     $i = $this->alph_low[$num];  
                 }
                 
